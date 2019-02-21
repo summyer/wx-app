@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<scroll-view 
+  scroll-y
+  bindscrolltolower="lower"
+  class="hr-list">
+  <block wx:for="{{jobs}}" wx:for-item="job">
+    <view class="hr-list-item" data-id="{{job.id}}" bindtap="toDetail">
+      <view class="title padding-5">{{job.title}}</view>
+      <view class="address padding-5">{{job.workPlace}}  {{job.workType}}</view>
+      <view class="company padding-5">{{job.companyName}}</view>
+      <view class="salary padding-5" style='display:inline-block;'>{{job.salary}}</view>
+      <view class='apply'>申请此岗位</view>
+    </view>
+  </block>
+  <view hidden="{{hidden}}" style='text-align:center;height:180rpx;margin-top:20rpx;'>
+  <image src='../../img/load.gif' mode="aspectFit" style='width:100rpx;height:100rpx;'></image>
+  </view>
+</scroll-view>

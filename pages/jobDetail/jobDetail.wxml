@@ -1,0 +1,25 @@
+<!--pages/jobDetail/jobDetail.wxml-->
+<view class="hr-job-detail-head">
+  <text class='h2'>{{jobDetail.title}}</text>
+  <view class='padding-5 salary'>{{jobDetail.salary}}</view>
+  <view class='padding-5 font-gary'>
+  <text>更新：{{jobDetail.updateTime}}</text> 
+  <text style='float:right'>浏览:726次</text></view>
+</view>
+<view class="hr-job-detail-mark">
+  <view class='padding-5'><text class='property'>职位:</text>{{jobDetail.workType}}</view>
+  <view class='padding-5'><text class="property">地区:</text>{{jobDetail.workCity}}-{{jobDetail.workPlace}}</view>
+</view>
+<view class="hr-job-detail-des">
+<text class='h2 padding-5'>职位相关</text>
+<view class='padding-5 content'>
+<rich-text nodes="{{jobDetail.jobDescription}}">
+</rich-text>
+</view>
+</view>
+<view class="hr-job-detail-company">
+<text class='h2 padding-5'>公司简介</text>
+<rich-text class='content' nodes="{{jobDetail.companyDes}}">
+
+</rich-text>
+</view>

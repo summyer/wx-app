@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jobDetail/jobDetail",
+    "pages/borrow/borrow",
+    "pages/person/person",
+    "pages/login/login",
+    "pages/login/findpw",
+    "pages/login/regist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4cb4e7",
+    "navigationBarTitleText": "豪脉人力",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#a3a380",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home-sel.png"
+      },
+      {
+        "pagePath": "pages/borrow/borrow",
+        "text": "我要借支",
+        "iconPath": "img/borrow.png",
+        "selectedIconPath": "img/borrow-sel.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "img/person.png",
+        "selectedIconPath": "img/person-sel.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,26 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+page{
+  width: 100%;
+  height: 100%;
+}
+.page-unlogin{
+  width: 100%;
+  height: 100%;
+  background: rgb(250, 250, 250);
+  text-align: center;
+}
+.page-unlogin > navigator{
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 20%;
+  border-radius: 50rpx;
+  background:#ffc09f;
+}

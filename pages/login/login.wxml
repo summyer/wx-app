@@ -1,0 +1,40 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="formSubmit" >
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">账户</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="账户或手机号" name='username' value="{{defaultValue}}"/>
+      </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">密码</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input class="weui-input" password placeholder="请输入您的密码" name='password' value="{{defaultValue}}"/>
+      </view>
+  </view>
+</view>
+<view style='height:50rpx;'>
+  <navigator
+      url="../login/regist"
+      hover-class="none"
+      style='display:inline-block;float:right;color:#ffc09f'
+    >
+      还没有注册？
+    </navigator>
+    <navigator
+    url="../login/findpw"
+    hover-class="none"
+    style='display:inline-block;float:right;margin-right:30rpx;color:#ffc09f'
+    >
+      找回密码
+    </navigator>
+  </view>
+<view class="weui-btn-area" style='clear:both;'>
+            <button class="weui-btn" type="primary" style='background:#4cb4e7' formType="submit">登录</button>
+</view>
+</form>

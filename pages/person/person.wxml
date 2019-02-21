@@ -1,0 +1,35 @@
+<!--pages/person/person.wxml-->
+<view class='hr-center-container'>
+<view class='hr-center-head page__hd'>
+  <image  class='photo' src="../../img/default.png"></image>
+  <text hidden='{{!isLogin}}'>{{userInfo.nickName}}</text>
+  <text class="login" hidden='{{isLogin}}' bindtap='login'>点此登陆</text>
+</view>
+
+
+<view class='hr-center-main page__bd'>
+  <view class='li' hidden='{{!isLogin}}'>
+    <image src="../../img/record.png"></image>
+    <view>借支记录</view>
+    <image src="../../img/right.png" class='right'></image>
+  </view>
+  <view class='li'>
+    <image src="../../img/feedback.png" ></image>
+    <view>意见反馈</view>
+    <image src="../../img/right.png" class='right'></image>
+  </view>
+  <view class='li'>
+    <image src="../../img/call.png" ></image>
+    <view>联系客服</view>
+    <image src="../../img/right.png" class='right'></image>
+  </view>
+  <view class='li'>
+    <image src="../../img/about.png" ></image>
+    <view>关于我们</view>
+    <image src="../../img/right.png" class='right'></image>
+  </view>
+</view>
+
+<view class='hr-center-footer' hidden='{{!isLogin}}' bindtap='logout'>退出登陆</view>
+
+</view>

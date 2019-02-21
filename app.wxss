@@ -1,0 +1,26 @@
+/**app.wxss**/
+@import "weui.wxss";
+page{
+  background:rgb(245, 245, 245);
+}
+
+.hr-list{
+  margin:0 auto; 
+  height: 100%;
+  width:95%;
+  padding:0 20rpx;
+}
+
+.hr-list-item{ 
+  margin-top: 10rpx; 
+  display: block;
+}
+
+.padding-5{
+  padding: 5rpx;
+}
+
+.font-gary{
+  color: darkgray;
+  font-size:0.8em;
+}

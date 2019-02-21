@@ -1,0 +1,52 @@
+/* pages/jobDetail/jobDetail.wxss */
+page{
+  width: 100%;
+}
+.hr-job-detail-head{
+  margin: 0 auto;
+  width: 90%;
+  background: rgb(250, 250, 250);
+  padding: 10rpx 30rpx;
+  height: 200rpx;
+}
+.hr-job-detail-head .salary{
+  color: #ffc09f;
+  font-size: 1em;
+}
+.hr-job-detail-mark{
+  margin: 0 auto;
+  width: 90%;
+  font-size: 0.9em;
+  margin-top: 8rpx;
+  background: rgb(250, 250, 250);
+  padding: 10rpx 30rpx;
+}
+.hr-job-detail-mark .property{
+  margin-right: 10rpx;
+  color: rgb(110, 110, 110);
+}
+
+.hr-job-detail-des{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 30rpx;
+  background: rgb(250, 250, 250);
+  padding: 10rpx 30rpx;
+}
+.hr-job-detail-des .content{
+  color: rgb(50, 50, 50);
+}
+.hr-job-detail-company{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 30rpx;
+  background: rgb(250, 250, 250);
+  padding: 10rpx 30rpx;
+}
+.hr-job-detail-company .content{
+  color: rgb(50, 50, 50);
+}
+.h2{
+  font-size: 1em;
+  font-weight: 600;
+}

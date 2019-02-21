@@ -1,0 +1,93 @@
+<!--logs.wxml-->
+<view class="page-unlogin" hidden='{{isLogin}}'>
+<navigator open-type='navigate' url='../../pages/login/login'>请先登录</navigator>
+</view>
+<view hidden='{{!isLogin}}'>
+<form bindsubmit="formSubmit" >
+    <view class="weui-cells__title">借支申请</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="uname" class="weui-input"  placeholder="请输入您的姓名" value="{{defaultValue}}" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="phone" class="weui-input" placeholder="请输入您的手机号" value="{{defaultValue}}" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">身份证号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="idCard" class="weui-input"  placeholder="请输入您的证件号" value="{{defaultValue}}" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+               <view class="weui-cell__hd">
+                    <view class="weui-label">支付方式</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <picker name="payType" class='weui-cell' value="{{payType}}" range="{{types}}">
+                    <view>{{types[payType]}}</view>
+                  </picker>
+                </view>
+            </view>
+            
+            <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">支付账号</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                       <input name="payNum" class="weui-input"  placeholder="请输入您的支付账号" value="{{defaultValue}}" />
+                  </view>
+              </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">说明</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <textarea name="mark" class="weui-textarea" placeholder="借支原因" style="height: 3.3em"  value="{{defaultValue}}" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+  
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">借款金额</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="money" type="number" class="weui-input" placeholder="请输入金额(单位元)" value="{{defaultValue}}" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">所在工厂</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="company" class="weui-input" placeholder="请输入工厂名" value="{{defaultValue}}" />
+                </view>
+            </view>
+        </view>
+        
+        <checkbox-group  name="isAgree">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox value="agree"/>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" style='background:#4cb4e7' formType="submit">确定</button>
+        </view>
+</form>
+</view>

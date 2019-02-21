@@ -1,0 +1,36 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  width: 100%;
+  background: rgb(245, 245, 245);
+}
+
+.hr-list-item{
+  background: rgb(250, 250, 250);
+  padding: 20rpx 40rpx;
+}
+.hr-list-item .title{
+  font-size: 1em;
+  font-weight: 600;
+}
+.hr-list-item .address{
+  color: darkgray;
+  font-size: 0.7em;
+}
+.hr-list-item .company{
+  font-size: 0.7em;
+  color: darkgray;
+}
+.hr-list-item .salary{
+  color: #ffc09f;
+  font-size: 1em;
+}
+.hr-list-item .apply{
+  display:inline-block;
+  color: white;
+  margin-left:200rpx;
+  border-radius: 50rpx;
+  border: solid 4rpx #ffc09f;
+  background: #ffc09f;
+}
+
