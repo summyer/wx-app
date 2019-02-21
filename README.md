@@ -5,6 +5,9 @@
 ## 工作列表
 <img src="display/IMG_1673.PNG" alt="图1"  width="200" height="300">
 
+## 工作详情
+<img src="display/IMG_1679.PNG" alt="图0"  width="200" height="300">
+
 ## 我要借支
 <img src="display/IMG_1674.PNG" alt="图2"  width="200" height="300">
 
