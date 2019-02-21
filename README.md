@@ -1,0 +1,32 @@
+# wx-app
+一款简单的招聘小程序
+
+# 效果图
+## 工作列表
+<img src="display/IMG_1673.PNG" alt="图1"  width="200" height="300">
+
+## 工作详情
+<img src="display/IMG_1679.PNG" alt="图0"  width="200" height="300">
+
+## 我要借支
+<img src="display/IMG_1674.PNG" alt="图2"  width="200" height="300">
+
+## 个人中心
+<img src="display/IMG_1675.PNG" alt="图3"  width="200" height="300">
+
+## 登录
+<img src="display/IMG_1676.PNG" alt="图4"  width="200" height="300">
+
+## 注册
+<img src="display/IMG_1677.PNG" alt="图5"  width="200" height="300">
+
+## 找回密码
+<img src="display/IMG_1677.PNG" alt="图5"  width="200" height="300">
+
+# 关于
+由于小程序不支持session,所以目前在小程序端做了一些处理模拟cookie
+
+# 后期
+将账户中心重新设计一下；
+增加一些功能
+用vue实现后台管理
