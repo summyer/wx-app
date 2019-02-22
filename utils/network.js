@@ -48,6 +48,22 @@ const borrowAuditPost = (param, callback) => {
     }
   })
 }
+//我的借支记录
+const borrowAuditList = (callback, pageNo) => {
+  wx.request({
+    url: apiUrl.api.borrowAuditListUrl,
+    method: 'GET',
+    header: cookieUtil.wrapperHeader({
+      'content-type': 'application/json'
+    }),
+    data: {
+      pageNumber: pageNo
+    },
+    success(res) {
+      commonUtil.preCallBack(callback, res);
+    }
+  })
+}
 
 
 //-----------------------下面接口暂时无用
@@ -116,5 +132,6 @@ module.exports = {
   doLogin:doLogin,
   checkLogin: checkLogin,
   getEncryData: getEncryData,
-  borrowAuditPost: borrowAuditPost
+  borrowAuditPost: borrowAuditPost,
+  borrowAuditList: borrowAuditList
 }

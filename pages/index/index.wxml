@@ -8,8 +8,10 @@
       <view class="title padding-5">{{job.title}}</view>
       <view class="address padding-5">{{job.workPlace}}  {{job.workType}}</view>
       <view class="company padding-5">{{job.companyName}}</view>
+      <view style='width:100%'>
       <view class="salary padding-5" style='display:inline-block;'>{{job.salary}}</view>
       <view class='apply'>申请此岗位</view>
+      </view>
     </view>
   </block>
   <view hidden="{{hidden}}" style='text-align:center;height:180rpx;margin-top:20rpx;'>

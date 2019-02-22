@@ -6,7 +6,8 @@
     "pages/person/person",
     "pages/login/login",
     "pages/login/findpw",
-    "pages/login/regist"
+    "pages/login/regist",
+    "pages/borrow/borrowList"
   ],
   "window": {
     "backgroundTextStyle": "light",

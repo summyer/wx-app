@@ -58,9 +58,9 @@ const addEvents = function (_this) {
             duration: 2000,
             success() {
               setTimeout(function () {
-                wx.navigateBack({
-                  delta: 1
-                })
+                wx.switchTab({
+                  url: '../person/person',
+                });
               }, 2000) //延迟时间
             }
           })

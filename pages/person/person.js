@@ -26,7 +26,12 @@ Page({
       url: '../../pages/login/login'
     })
   },
-
+  nextPage:function(e){
+    let url = e.currentTarget.dataset.route;
+    wx.navigateTo({
+      url: url,
+    })
+  },
   logout:function(){
     let ctx=this;
     loginUtil.logout(function(res){

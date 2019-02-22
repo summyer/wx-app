@@ -1,0 +1,22 @@
+<!--pages/borrow/borrowList.wxml-->
+<scroll-view 
+  scroll-y
+  bindscrolltolower="lower"
+  class="hr-list">
+  <block wx:for="{{list}}" wx:for-item="item">
+    <view class="hr-list-item" data-id="{{item.id}}" bindtap="toDetail">
+      <view class="borrow-people padding-5">{{item.uname}}</view>
+      <view class="wapper padding-5">
+      <text>借支{{item.money}}元 </text>   
+      <text style='float:right'>申请时间：{{item.createTime}}</text>
+      </view>
+      <view style='width:100%'>
+      <view class="company padding-5" style='display:inline-block;'>{{item.company}}</view>
+      <view class='state'>待审核</view>
+      </view>
+    </view>
+  </block>
+  <view hidden="{{hidden}}" style='text-align:center;height:180rpx;margin-top:20rpx;'>
+  <image src='../../img/load.gif' mode="aspectFit" style='width:100rpx;height:100rpx;'></image>
+  </view>
+</scroll-view>

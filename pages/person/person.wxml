@@ -8,7 +8,7 @@
 
 
 <view class='hr-center-main page__bd'>
-  <view class='li' hidden='{{!isLogin}}'>
+  <view class='li' hidden='{{!isLogin}}' data-route='../borrow/borrowList' bindtap='nextPage'>
     <image src="../../img/record.png"></image>
     <view>借支记录</view>
     <image src="../../img/right.png" class='right'></image>
