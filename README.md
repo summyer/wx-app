@@ -11,7 +11,7 @@
 ## 我要借支
 <img src="display/IMG_1674.PNG" alt="图1"  width="200" height="300">
 
-## 我要借支记录
+## 我的借支记录
 <img src="display/IMG_1682.PNG" alt="图2"  width="200" height="300">
 
 ## 个人中心
